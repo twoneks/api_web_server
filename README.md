@@ -1,4 +1,4 @@
-# api_web_server
+# api_web_server
 
 This application provides a basic environment that can be extended to develope a Ruby on Rails API web server.
 An authentication layer is implemented and it is based on [devise](https://github.com/plataformatec/devise) and [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth). 
@@ -26,4 +26,4 @@ config.middleware.use Rack::Cors do
     # Your configurations
 end
 ```
-as suggested [here](https://github.com/lynndylanhurley/devise_token_auth#cors) and consider to user [j-toker](https://github.com/lynndylanhurley/j-toker) to perform your requests and [Apipie](https://github.com/Apipie/apipie-rails) to document your APIs.
+as suggested [here](https://github.com/lynndylanhurley/devise_token_auth#cors). You should consider to use [j-toker](https://github.com/lynndylanhurley/j-toker) to perform your requests and [Apipie](https://github.com/Apipie/apipie-rails) to document your APIs.
