@@ -18,6 +18,7 @@ Bundler.require(*Rails.groups)
 module ApiWebServer
   class Application < Rails::Application
     config.api_only = true
+    config.action_mailer.default_url_options = { host: 'localhost:3000' }
     config.middleware.use ActionDispatch::Flash
     # Configuration to allow cross origin requests
     config.middleware.use Rack::Cors do
